@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body{
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  background-color: #F9F9F9;
+  font-size: 14px;
+}
+
+code{
+  border: 1px solid #222;
+  border-radius: 3px;
+  color: #29679d;
+  font-size: 14px;
+}
+
+code:hover{
+  color: #f5f8f1;
+  background-color: #29679d;
+}
+
+a:link {
+  font-weight: 400;
+  color: #467fc6;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  font-weight: 400;
+  color: #467fc6;
+}
+a:hover {
+  text-decoration: underline;
+  font-weight: 400;
+  color: #6998f0;
+}
+a:active {
+  text-decoration: none;
+  font-weight: 400;
+  color: #467fc6;
+}
+
+a.btn{
+  color:#FFF;
+}
+
+.containar {
+  margin: 0 auto 0 auto;
+  padding: 0 auto 0 auto;
+  width: 100%;
+  min-height: 600px;
+  background-color: #29679d;
+  background-image: url('../img/blueprint.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.header{
+  text-align: center;
+  margin: 0 auto 0 auto;
+  padding: 0 auto 0 auto;
+}
+
+.logo{
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  font-size: 40px;
+  color: #EEE;
+  text-shadow: 1px 1px 3px #333;
+}
+
+.content{
+  color: #111;
+  background-color: #F9F9F9;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 80%;
+  min-width: 200px;
+  border-radius: 10px;
+}
+
+.playground{
+  background-color: #272822;
+  border-radius: 5px;
+  padding: 1em 0.5em;
+  color: #EEE;
+}
+
+.playground select{
+  color: #111;
+}
+
+.output{
+  background-color: #000;
+  border-radius: 5px;
+  padding: 1em 0.5em;
+  color: #FFF;
+}
+
+.vartype{
+  color: #66d9ef;
+}
+
+.smallinput{
+  width: 50px;
+  background-color: rgba(250,250,250,0);
+  border: 1px solid #EEE;
+  border-radius: 2px;
+  padding-left: 5px;
+  color: #ae81ff;
+  -webkit-box-shadow: inset 0px 0px 4px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 4px 1px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 4px 1px rgba(0,0,0,0.75);
+}
