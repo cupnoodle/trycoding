@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Try Coding</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/gradient.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+<body>
+  <div class="containar">
+    <div class="header">
+      <p class="logo">Try Coding <i class="fa fa-code"></i></p>
+    </div>
+    <div class="content" style="text-align:center;">
+      <h3> Loop and Iteration </h3><br>
+      <p>
+        <b>A loop statement allows us to iterate a/a group of statement multiple times.</b><br><br>
+        You can write a loop statement using <i>for</i> or <i>while</i> : <br><br>
+        <b> For loop </b><br><br>
+        <code>
+          for ( <i> initialization</i>; <i>condition</i> ; <i>action after each iteration</i> ) <br>
+            { <br>
+              &nbsp;&nbsp;<i> continue execute this statement if the condition is true </i><br>
+            } <br>
+        </code>
+        <br><br>
+        <img src="img/for.png"></img><br><br>
+        <br><br><br>
+        <b>While loop</b><br><br>
+        <code>
+          while ( <i>condition</i> ) <br>
+            { <br>
+              &nbsp;&nbsp;<i> continue execute this statement if the condition is true </i><br>
+            } <br>
+        </code>
+        <br><br>
+        <img src="img/while.png"></img><br><br>
+        <br><br><br>
+      </p>
+      <h3><i class="fa fa-rocket"></i> Practice</h3>
+      <div class="playground" style="max-width: 500px; margin:1em auto;">
+        using namespace std ; <br><br>
+        for(int <span class="vartype">int</span> counter = 1; counter &lt;= <span class="numeric">10</span>; counter++) <br><br>
+        { <br><br>
+          &nbsp;&nbsp; cout&lt;&lt;"Value of "&lt;&lt; counter &lt;&lt; " x 4 is " &lt;&lt; counter*4 &lt;&lt; endl;<br><br>  
+        } <br><br>
+
+      </div>
+      <h3><i class="fa fa-terminal"></i> Output </h3>
+      <br>//When <span class="numeric"> counter </span> = 
+      <select id="input_counter">
+        <option value="1" selected="selected"> 1 </option>
+        <option value="2"> 2 </option>
+        <option value="3"> 3 </option>
+        <option value="4"> 4 </option>
+        <option value="5"> 5 </option>
+        <option value="6"> 6 </option>
+        <option value="7"> 7 </option>
+        <option value="8"> 8 </option>
+        <option value="9"> 9 </option>
+        <option value="10"> 10 </option>
+      </select>
+      <span></span><br>
+      <div class="output" style="max-width: 500px; margin:1em auto;">
+        Value of <span id="output_counter" class="numeric"> 1 </span> x 4 is <span id="output_four" class="numeric">4</span>
+      </div>
+      <br>
+      //Whole output
+      <div class="output" style="max-width: 500px; margin:1em auto;">
+        Value of <span class="numeric"> 1 </span> x 4 is <span class="numeric">4</span><br>
+        Value of <span class="numeric"> 2 </span> x 4 is <span class="numeric">8</span><br>
+        Value of <span class="numeric"> 3 </span> x 4 is <span class="numeric">12</span><br>
+        Value of <span class="numeric"> 4 </span> x 4 is <span class="numeric">16</span><br>
+        Value of <span class="numeric"> 5 </span> x 4 is <span class="numeric">20</span><br>
+        Value of <span class="numeric"> 6 </span> x 4 is <span class="numeric">24</span><br>
+        Value of <span class="numeric"> 7 </span> x 4 is <span class="numeric">28</span><br>
+        Value of <span class="numeric"> 8 </span> x 4 is <span class="numeric">32</span><br>
+        Value of <span class="numeric"> 9 </span> x 4 is <span class="numeric">36</span><br>
+        Value of <span class="numeric"> 10 </span> x 4 is <span class="numeric">40</span><br>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery11.min.js"></script>
+  <script>
+    function check_and_update()
+    {
+      var counter_value = $("#input_counter").val();
+      var counter_four = counter_value*4;
+
+      $("#output_counter").html(counter_value);
+      $("#output_four").html(counter_four);
+    }
+
+    $(document).ready(function() {
+      $("#input_counter").change(function(){
+        check_and_update();
+      });
+
+      $(".logo").click(function(){
+        window.location = "index.html";
+      });
+    });
+  </script>
+</body>
+</html>

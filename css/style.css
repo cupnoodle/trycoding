@@ -119,6 +119,10 @@ a.btn{
   color: #f0266e;
 }
 
+.numeric{
+  color: #ae81ff;
+}
+
 .smallinput{
   width: 50px;
   background-color: rgba(250,250,250,0);
