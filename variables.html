@@ -36,10 +36,10 @@
         <span class="vartype">double</span> b = <input id="input_b" type="text" class="smallinput"></input> ; <br><br>
         <span class="vartype">char</span> c = ' <input id="input_c" type="text" class="smallinput" maxlength='1'></input> ' ; <br><br>
         <span class="vartype">boolean</span> d = <select id="input_d"><option value="true" selected="selected">true</option><option value="false">false</option></select> ; <br><br>
-        cout&lt;&lt;" a = "&lt;&lt; a &lt;&lt; endl ; <br><br>
-        cout&lt;&lt;" b = "&lt;&lt; b &lt;&lt; endl ; <br><br>
-        cout&lt;&lt;" c = "&lt;&lt; c &lt;&lt; endl ;<br><br>
-        cout&lt;&lt;" d = "&lt;&lt; noboolalpha &lt;&lt;  d &lt;&lt; endl ;
+        cout&lt;&lt;"<span class="constant"> a = </span>"&lt;&lt; a &lt;&lt; endl ; <br><br>
+        cout&lt;&lt;"<span class="constant"> b = </span>"&lt;&lt; b &lt;&lt; endl ; <br><br>
+        cout&lt;&lt;"<span class="constant"> c = </span>"&lt;&lt; c &lt;&lt; endl ;<br><br>
+        cout&lt;&lt;"<span class="constant"> d = </span>"&lt;&lt; noboolalpha &lt;&lt;  d &lt;&lt; endl ;
       </div>
       <h3><i class="fa fa-terminal"></i> Output </h3>
       <div class="output" style="max-width: 500px; margin:1em auto;">
@@ -55,7 +55,7 @@
     $(document).ready(function() {
       $("#input_a").keydown(function (e) {
           // Allow: backspace, delete, tab, escape, enter and .
-          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110]) !== -1 ||
+          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13]) !== -1 ||
                // Allow: Ctrl+A
               (e.keyCode == 65 && e.ctrlKey === true) || 
                // Allow: home, end, left, right
