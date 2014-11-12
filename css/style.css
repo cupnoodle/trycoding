@@ -58,8 +58,8 @@ a.btn{
   min-height: 600px;
   background-color: #29679d;
   background-image: url('../img/blueprint.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  /* background-size: cover; */
   background-position: top;
 }
 
