@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>尝试编码 Try Coding</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/gradient.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+<body>
+  <div class="containar">
+    <div class="header">
+      <p class="logo">尝试编码 Try Coding <i class="fa fa-code"></i></p>
+    </div>
+    <div class="content" style="text-align:center;">
+      <h3> Array </h3><br>
+      <p>
+        <b>Array is a collection of elements of the same type.</b><br><br>
+        Array size is the number of elements it can contain, array size cannot be altered after declaration. <br><br>
+        Each element inside the array has an unique <i>index</i> number which is used to access them. <br><br>
+        Index number starts from <i>0</i><br><br>
+        <b> Array declaration </b><br><br>
+        <code>
+          <i>variable type</i> variable_name [ array size ];
+          <br>
+          /*example array of double type with array size 10*/ <br>
+          <i>double</i> example[10];
+        </code>
+        <br><br><br>
+        <b>Array declaration with element initialization</b><br><br>
+        <code>
+          <i>variable type</i> variable_name [ array size ] = { element1, element2 ,... };
+          <br>
+          /*example array of int type with array size 5*/ <br>
+          <i>int</i> prime[5] = {2,3,5,7,11} ;
+        </code>
+        <br><br>
+        An illustrated sample of above array is shown below:<br><br>
+        <u>prime</u>
+        <table class="table" id="prime_table" style="width:auto; margin: 0 auto;">
+          <tr><th>Index</th><td class="col1 success">0</td><td class="col2">1</td><td class="col3">2</td><td class="col4">3</td><td class="col5">4</td></tr>
+          <tr><th>Value</th><td class="col1 success">2</td><td class="col2">3</td><td class="col3">5</td><td class="col4">7</td><td class="col5">11</td></tr>
+        </table><br><br>
+        <button type="button" class="btn btn-primary" id="prev_button"><i class="fa fa-chevron-left"></i></button> &nbsp;&nbsp;
+        prime[ <b><span id="prime_index">0</span></b> ] = <b><span id="prime_value">2</span></b> &nbsp;&nbsp;
+        <button type="button" class="btn btn-primary" id="next_button"><i class="fa fa-chevron-right"></i></button> 
+        <br><br><br>
+      </p>
+      <h3><i class="fa fa-rocket"></i> Practice</h3>
+      <div class="playground" style="max-width: 500px; margin:1em auto;">
+        using namespace std ; <br><br>
+        int fibonacci [<span class="numeric">10</span>] = {1,1,2,3,5,8,13,21,34,55}<br><br>
+        for( <span class="vartype">int</span> counter = 0; counter &lt;= <span class="numeric">9</span>; counter++) <br><br>
+        { <br><br>
+          &nbsp;&nbsp; cout&lt;&lt;"<span class="constant">fibonacci[</span>"&lt;&lt; counter &lt;&lt; "<span class="constant">] =  </span>" &lt;&lt; fibonacci[counter] &lt;&lt; endl;<br><br>  
+        } <br><br>
+
+      </div>
+      <h3><i class="fa fa-terminal"></i> Output </h3>
+      <br>//When <span class="numeric"> counter </span> = 
+      <select id="input_counter">
+        <option value="0" selected="selected"> 0 </option>
+        <option value="1"> 1 </option>
+        <option value="2"> 2 </option>
+        <option value="3"> 3 </option>
+        <option value="4"> 4 </option>
+        <option value="5"> 5 </option>
+        <option value="6"> 6 </option>
+        <option value="7"> 7 </option>
+        <option value="8"> 8 </option>
+        <option value="9"> 9 </option>
+      </select>
+      <span></span><br>
+      <div class="output" style="max-width: 500px; margin:1em auto;">
+        fibonacci[<span id="output_counter" class="numeric"> 0 </span>] = <span id="output_fibonacci" class="numeric">1</span>
+      </div>
+      <br>
+      //Whole output
+      <div class="output" style="max-width: 500px; margin:1em auto;">
+        fibonacci[<span class="numeric"> 0 </span>] = <span class="numeric">1</span><br>
+        fibonacci[<span class="numeric"> 1 </span>] = <span class="numeric">1</span><br>
+        fibonacci[<span class="numeric"> 2 </span>] = <span class="numeric">2</span><br>
+        fibonacci[<span class="numeric"> 3 </span>] = <span class="numeric">3</span><br>
+        fibonacci[<span class="numeric"> 4 </span>] = <span class="numeric">5</span><br>
+        fibonacci[<span class="numeric"> 5 </span>] = <span class="numeric">8</span><br>
+        fibonacci[<span class="numeric"> 6 </span>] = <span class="numeric">13</span><br>
+        fibonacci[<span class="numeric"> 7 </span>] = <span class="numeric">21</span><br>
+        fibonacci[<span class="numeric"> 8 </span>] = <span class="numeric">34</span><br>
+        fibonacci[<span class="numeric"> 9 </span>] = <span class="numeric">55</span><br>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery11.min.js"></script>
+  <script>
+    function check_and_update()
+    {
+      var fibonacci = [1,1,2,3,5,8,13,21,34,55];
+      var counter_value = $("#input_counter").val();
+      var fibonacci_value = fibonacci[counter_value];
+
+      $("#output_counter").html(counter_value);
+      $("#output_fibonacci").html(fibonacci_value);
+    }
+
+    $(document).ready(function() {
+      $("#input_counter").change(function(){
+        check_and_update();
+      });
+
+      $(".logo").click(function(){
+        window.location = "index.html";
+      });
+
+      $("#next_button").click(function(){
+        var current_active = $("#prime_table .success").attr("class").match(/col[0-9]/);
+        current_active = current_active[0];
+        var current_index;
+        var current_value;
+        
+        
+
+        $("."+current_active).removeClass("success");
+
+        current_active = current_active.substr(-1,1);
+        current_active = parseInt(current_active);
+        if(current_active<5)
+        {
+          current_active += 1;
+        }
+        current_active = "col" + current_active;
+        
+        $("." + current_active).addClass("success");
+        $("." + current_active).each(function(i,v){
+          if(i == 0)
+          {
+            current_index = $(this).html();
+          }
+          if(i == 1)
+          {
+            current_value = $(this).html();
+          }
+        });
+
+        $("#prime_index").html(current_index);
+        $("#prime_value").html(current_value);
+      });
+
+      $("#prev_button").click(function(){
+        var current_active = $("#prime_table .success").attr("class").match(/col[0-9]/);
+        current_active = current_active[0];
+        var current_index;
+        var current_value;
+        
+        
+
+        $("."+current_active).removeClass("success");
+
+        current_active = current_active.substr(-1,1);
+        current_active = parseInt(current_active);
+        if(current_active>1)
+        {
+          current_active -= 1;
+        }
+        current_active = "col" + current_active;
+        
+        $("." + current_active).addClass("success");
+        $("." + current_active).each(function(i,v){
+          if(i == 0)
+          {
+            current_index = $(this).html();
+          }
+          if(i == 1)
+          {
+            current_value = $(this).html();
+          }
+        });
+
+        $("#prime_index").html(current_index);
+        $("#prime_value").html(current_value);
+      });
+
+    });
+  </script>
+</body>
+</html>
