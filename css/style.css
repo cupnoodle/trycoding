@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);*/
 
 body{
   font-family: 'Open Sans', Arial, sans-serif;
@@ -47,8 +47,8 @@ a:active {
   color: #467fc6;
 }
 
-a.btn{
-  color:#FFF;
+a.btn-default{
+  color:#333;
 }
 
 .containar {
@@ -75,6 +75,11 @@ a.btn{
   font-size: 40px;
   color: #EEE;
   text-shadow: 1px 1px 3px #333;
+}
+
+.logo:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .content{
