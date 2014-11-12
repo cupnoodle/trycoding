@@ -1,11 +1,32 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/DXI1ORHCpsQm3Vp6mXoaTZS3E-kSBmtLoNJPDtbj2Pk.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('fonts/cJZKeOuBrn4kERxqtaUH3SZ2oysoEQEeKwjgmXLRnTc.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('fonts/k3k702ZOKiLJc3WVjuplzJS3E-kSBmtLoNJPDtbj2Pk.ttf') format('truetype');
+}
 
 body{
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 400;
   padding: 0;
   margin: 0;
-  background-color: #F9F9F9;
+  /* background-color: #F9F9F9; */
+  background-color: #29679d;
+  background-image: url('../img/blueprint.jpg');
+  background-repeat: repeat;
+  background-position: top;
   font-size: 14px;
 }
 
@@ -52,21 +73,21 @@ a.btn{
 }
 
 .containar {
-  margin: 0 auto 0 auto;
-  padding: 0 auto 0 auto;
+  margin: 0 auto;
+  padding: 0 auto;
   width: 100%;
   min-height: 600px;
-  background-color: #29679d;
+  /* background-color: #29679d;
   background-image: url('../img/blueprint.jpg');
   background-repeat: repeat;
-  /* background-size: cover; */
-  background-position: top;
+  background-size: cover;
+  background-position: top; */
 }
 
 .header{
   text-align: center;
-  margin: 0 auto 0 auto;
-  padding: 0 auto 0 auto;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 .logo{
