@@ -47,6 +47,13 @@ code:hover{
   background-color: #29679d;
 }
 
+video {
+  width: 90%    !important;
+  height: auto   !important;
+  margin-left: 10px; 
+  margin-right: 10px;
+}
+
 a:link {
   font-weight: 400;
   color: #467fc6;
@@ -68,8 +75,17 @@ a:active {
   color: #467fc6;
 }
 
-a.btn{
-  color:#FFF;
+a.btn-default{
+  color:#333;
+}
+
+.btn-flex
+{
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  margin: 5px;
 }
 
 .containar {
@@ -96,6 +112,11 @@ a.btn{
   font-size: 40px;
   color: #EEE;
   text-shadow: 1px 1px 3px #333;
+}
+
+.logo:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .content{

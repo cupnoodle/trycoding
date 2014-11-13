@@ -23,11 +23,12 @@
         <button type="button" class="btn btn-default" onclick="javascript:window.location = '../index.html'">English</button>
         <button type="button" class="btn btn-primary">中文</button>
       </div></h3><br>
-      
-        <a href="variables.html" class="btn btn-primary btn-lg" style="width:200px">变量</a><br><br>
-        <a href="if.html" class="btn btn-primary btn-lg" style="width:200px">條件運算式</a><br><br>
-        <a href="loop.html" class="btn btn-primary btn-lg" style="width:200px">程式迴圈</a><br><br>
-        <a href="array.html" class="btn btn-primary btn-lg" style="width:200px">数组</a><br><br>
+
+        <a href="variables.html" class="btn btn-default btn-lg btn-flex" style="width:200px">变量<br><img src="../img/variable_static.gif" class="animated" width="100" height="100"></img></a> 
+        <a href="if.html" class="btn btn-default btn-lg btn-flex" style="width:200px">條件運算式<br><img src="../img/conditional_static.gif" class="animated" width="100" height="100"></img></a> 
+        <a href="loop.html" class="btn btn-default btn-lg btn-flex" style="width:200px">程式迴圈<br><img src="../img/loop_static.gif" class="animated" width="100" height="100"></img></a> 
+        <a href="array.html" class="btn btn-default btn-lg btn-flex" style="width:200px">数组<br><img src="../img/array_static.gif" class="animated" width="100" height="100"></img></a>  
+        <a href="compile.html" class="btn btn-default btn-lg btn-flex" style="width:200px">如何编译程式码<br><img src="../img/play_static.gif" class="animated" width="100" height="100"></img></a> <br><br>
 
       </p>
 
@@ -37,6 +38,16 @@
   <script>
   $(".logo").click(function(){
     window.location = "index.html";
+  });
+
+  $(".animated").hover(function(){
+    var animate_src = $(this).attr("src");
+    animate_src = animate_src.replace("_static","");
+    $(this).attr("src", animate_src);
+  }, function(){
+    var static_src = $(this).attr("src");
+    static_src = static_src.replace(".gif", "_static.gif");
+    $(this).attr("src", static_src);
   });
   </script>
 </body>
