@@ -19,23 +19,10 @@
     </div>
     <div class="content" style="text-align:center;">
       <a class="btn btn-success" href="index.html"><i class="fa fa-home"></i> 返回</a> &nbsp
-      <a class="btn btn-danger hidden-xs" href="array2.html"><i class="fa fa-book"></i>&nbsp 下一页</a> &nbsp
+      <a class="btn btn-danger hidden-xs" href="array.html"><i class="fa fa-book"></i>&nbsp 上一页</a> &nbsp
       <a class="btn btn-primary hidden-xs" href="array3.html"><i class="fa fa-rocket"></i> 练习</a>
       <h3> 数组 Array </h3><br>
       <p>
-        <b>数组集合相同类型的元素。</b><br><br>
-        数组的大小就是可以包含的元素数量，数组的大小不能在声明之后改变。 <br><br>
-        该数组内的各元素具有可用于访问他们的独有索引号码 (<i>index</i> number)。 <br><br>
-        索引号码是从<i>0</i>开始算 <br><br>
-        <b> 声明数组 </b><br><br>
-        <code>
-          <i>variable type</i> variable_name [ array size ];
-          <br>
-          /*example array of double type with array size 10*/ <br>
-          <i>double</i> example[10];
-        </code>
-        <br><br>
-        <div class="visible-xs"><br>
         <b>数组声明与元素初始化</b><br><br>
         <code>
           <i>variable type</i> variable_name [ array size ] = { element1, element2 ,... };
@@ -53,57 +40,8 @@
         <button type="button" class="btn btn-primary" id="prev_button"><i class="fa fa-chevron-left"></i></button> &nbsp;&nbsp;
         prime[ <b><span id="prime_index">0</span></b> ] = <b><span id="prime_value">2</span></b> &nbsp;&nbsp;
         <button type="button" class="btn btn-primary" id="next_button"><i class="fa fa-chevron-right"></i></button> 
-        <br><br><br>
+        <br><br>
       </p>
-      <div class="row">
-      <div class="col-md-6">
-      <h3><i class="fa fa-rocket"></i> 练习</h3>
-      <div class="playground" style="max-width: 500px; margin:1em auto;">
-        using namespace std ; <br><br>
-        int fibonacci [<span class="numeric">10</span>] = {1,1,2,3,5,8,13,21,34,55}<br><br>
-        for( <span class="vartype">int</span> counter = 0; counter &lt;= <span class="numeric">9</span>; counter++) <br><br>
-        { <br><br>
-          &nbsp;&nbsp; cout&lt;&lt;"<span class="constant">fibonacci[</span>"&lt;&lt; counter &lt;&lt; "<span class="constant">] =  </span>" &lt;&lt; fibonacci[counter] &lt;&lt; endl;<br><br>  
-        } <br><br>
-
-      </div>
-      </div>
-      <div class="col-md-6">
-      <h3><i class="fa fa-terminal"></i> 输出结果 </h3>
-      <br>//当 <span class="numeric"> counter </span> = 
-      <select id="input_counter">
-        <option value="0" selected="selected"> 0 </option>
-        <option value="1"> 1 </option>
-        <option value="2"> 2 </option>
-        <option value="3"> 3 </option>
-        <option value="4"> 4 </option>
-        <option value="5"> 5 </option>
-        <option value="6"> 6 </option>
-        <option value="7"> 7 </option>
-        <option value="8"> 8 </option>
-        <option value="9"> 9 </option>
-      </select>
-      <span></span><br>
-      <div class="output" style="max-width: 500px; margin:1em auto;">
-        fibonacci[<span id="output_counter" class="numeric"> 0 </span>] = <span id="output_fibonacci" class="numeric">1</span>
-      </div>
-      <br>
-      //全部输出结果
-      <div class="output" style="max-width: 500px; margin:1em auto;">
-        fibonacci[<span class="numeric"> 0 </span>] = <span class="numeric">1</span><br>
-        fibonacci[<span class="numeric"> 1 </span>] = <span class="numeric">1</span><br>
-        fibonacci[<span class="numeric"> 2 </span>] = <span class="numeric">2</span><br>
-        fibonacci[<span class="numeric"> 3 </span>] = <span class="numeric">3</span><br>
-        fibonacci[<span class="numeric"> 4 </span>] = <span class="numeric">5</span><br>
-        fibonacci[<span class="numeric"> 5 </span>] = <span class="numeric">8</span><br>
-        fibonacci[<span class="numeric"> 6 </span>] = <span class="numeric">13</span><br>
-        fibonacci[<span class="numeric"> 7 </span>] = <span class="numeric">21</span><br>
-        fibonacci[<span class="numeric"> 8 </span>] = <span class="numeric">34</span><br>
-        fibonacci[<span class="numeric"> 9 </span>] = <span class="numeric">55</span><br>
-      </div>
-      </div>
-      </div>
-      </div>
     </div>
     <div class="footer"> &nbsp</div>
   </div>
