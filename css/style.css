@@ -54,6 +54,11 @@ video {
   margin-right: 10px;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 a:link {
   font-weight: 400;
   color: #467fc6;
@@ -77,6 +82,10 @@ a:active {
 
 a.btn-default{
   color:#333;
+}
+
+a.btn-success{
+  color:#FFF;
 }
 
 .btn-flex
