@@ -40,15 +40,16 @@
     window.location = "index.html";
   });
 
-  $(".animated").hover(function(){
-    var animate_src = $(this).attr("src");
+  $(".btn-flex").hover(function(){
+    var animate_src = $(this).find('> img').attr("src");
     animate_src = animate_src.replace("_static","");
-    $(this).attr("src", animate_src);
+    $(this).find('> img').attr("src", animate_src);
   }, function(){
-    var static_src = $(this).attr("src");
+    var static_src = $(this).find('> img').attr("src");
     static_src = static_src.replace(".gif", "_static.gif");
-    $(this).attr("src", static_src);
+   $(this).find('> img').attr("src", static_src);
   });
+
   </script>
 </body>
 </html>
