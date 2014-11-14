@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>尝试编码 Try Coding</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/gradient.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+<body>
+  <div class="containar">
+    <div class="header">
+      <p class="logo">尝试编码 <i class="fa fa-code"></i></p>
+    </div>
+    <div class="content" style="text-align:center;">
+      <a class="btn btn-success" href="index.html"><i class="fa fa-home"></i> 返回</a> &nbsp
+      <a class="btn btn-danger" href="loop.html"><i class="fa fa-book"></i>&nbsp 上一页</a> &nbsp
+      <a class="btn btn-primary" href="loop3.html"><i class="fa fa-rocket"></i> 练习</a>
+      <h3> 程式迴圈 Loop and Iteration </h3><br>
+      <p>        
+        <div class="row">
+        <div class="col-md-6">
+        <h3> For迴圈 </h3><br><br>
+        <code>
+          for ( <i> initialization</i>; <i>condition</i> ; <i>action after each iteration</i> ) <br>
+            { <br>
+              &nbsp;&nbsp;<i> continue execute this statement if the condition is true </i><br>
+            } <br>
+        </code>
+        <br><br></div><div class="col-md-6">
+        <img src="../img/for.png"></img><br></div></div>
+        
+      </p>
+    </div>
+    
+    <div class="footer"> &nbsp</div>
+  </div>
+  <script src="../js/jquery11.min.js"></script>
+  <script>
+    function check_and_update()
+    {
+      var counter_value = $("#input_counter").val();
+      var counter_four = counter_value*4;
+
+      $("#output_counter").html(counter_value);
+      $("#output_four").html(counter_four);
+    }
+
+    $(document).ready(function() {
+      $("#input_counter").change(function(){
+        check_and_update();
+      });
+
+      $(".logo").click(function(){
+        window.location = "index.html";
+      });
+    });
+  </script>
+</body>
+</html>
