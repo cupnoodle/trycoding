@@ -104,6 +104,17 @@ a.btn-danger{
   margin: 5px;
 }
 
+.button.raised {
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+    
+.button.raised:active, .button.raised:hover {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  transition-delay: 0s;
+}
+
 .containar {
   margin: 0 auto;
   padding: 0 auto;
